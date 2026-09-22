@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d3edff;
+    color: #222;
+}
+
+.menu {
+    background-color: #172a3a;
+    padding: 15px;
+}
+
+.menu-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+.inicio {
+    background-color: #dceeff;
+    padding: 80px 20px;
+}
+
+.inicio-conteudo {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.inicio h1 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.inicio h2 {
+    font-size: 28px;
+}
+
+.inicio p {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.pequeno {
+    font-size: 14px !important;
+    font-weight: bold;
+}
+
+.planeta {
+    font-size: 180px;
+}
+
+
+.secao {
+    padding: 60px 20px;
+}
+
+.secao h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+
+.mensagem {
+    background-color: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.personagens {
+    background-color: #eaf4ff;
+}
+
+.personagens-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.personagem-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.personagem-imagem {
+    font-size: 70px;
+}
+
+.personagem-card h3 {
+    margin-bottom: 5px;
+}
+
+.personagem-card h4 {
+    color: #555;
+}
+
+
+.cenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.cenario {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+
+.jogar {
+    background-color: #fff3cd;
+}
+
+.como-jogar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.como-jogar div {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+
+.manual {
+    background-color: #eef7ee;
+}
+
+.manual-conteudo {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.manual-conteudo h3 {
+    margin-top: 20px;
+}
+
+.manual-conteudo h3:first-child {
+    margin-top: 0;
+}
+
+
+.baixar {
+    text-align: center;
+    background-color: #e5e5ff;
+}
+
+.baixar button {
+    margin: 5px;
+}
+
+#statusJogo {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.equipe-flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.membro {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+footer {
+    background-color: #172a3a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+@media (max-width: 800px) {
+
+    .menu-conteudo {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio h1 {
+        font-size: 45px;
+    }
+
+    .planeta {
+        font-size: 100px;
+    }
+
+    .personagens-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .como-jogar {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .personagens-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .inicio h1 {
+        font-size: 35px;
+    }
+}

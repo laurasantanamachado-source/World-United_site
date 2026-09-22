@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World United!</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+        .animate-spin-slow {
+            animation: spinSlow 30s linear infinite;
+        }
+        .animate-float {
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-teal-500 selection:text-slate-950">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#inicio" class="flex items-center gap-3 group">
+                <span class="text-3xl transition-transform group-hover:scale-110">🌎</span>
+                <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-teal-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                    World United
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-300">
+                <a href="#historia" class="hover:text-teal-400 transition-colors">História</a>
+                <a href="#personagens" class="hover:text-teal-400 transition-colors">Personagens</a>
+                <a href="#jogar" class="hover:text-teal-400 transition-colors">Como jogar</a>
+                <a href="#manual" class="hover:text-teal-400 transition-colors">Manual</a>
+                <a href="#baixar" class="hover:text-teal-400 transition-colors">Jogue</a>
+                <a href="#equipe" class="hover:text-teal-400 transition-colors">Equipe</a>
+            </div>
+
+            <a href="#baixar" class="bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-teal-400 hover:to-indigo-500 text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-lg shadow-teal-500/20 transition-all hover:scale-105 active:scale-95">
+                Baixar / Jogar
+            </a>
+        </div>
+    </nav>
+
+    <section id="inicio" class="pt-36 pb-20 md:pt-48 md:pb-32 px-6 relative overflow-hidden">
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-3xl -z-10"></div>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+                    ✨ UM JOGO SOBRE UNIÃO E DIVERSIDADE
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-tight text-white">
+                    WORLD UNITED
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-teal-400 to-indigo-400 bg-clip-text text-transparent">
+                    Juntos somos melhores.
+                </h2>
+                <p class="text-slate-300 text-lg leading-relaxed">
+                    Quatro jovens. Quatro países. Uma aventura. Para vencer, eles vão precisar descobrir que suas diferenças podem ser justamente aquilo que os torna mais fortes.
+                </p>
+                <div class="pt-2 flex flex-wrap gap-4">
+                    <a href="#historia" class="bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-teal-400 hover:to-indigo-500 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-teal-500/20 transition-all hover:scale-105 active:scale-95">
+                        Conhecer o jogo
+                    </a>
+                    <a href="#baixar" class="bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold px-6 py-3.5 rounded-xl border border-slate-800 transition-all hover:scale-105 active:scale-95">
+                        Área de Download
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center relative">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-tr from-teal-500/20 via-indigo-500/20 to-purple-500/20 p-2 flex items-center justify-center border border-slate-800/80 shadow-2xl animate-float">
+                    <div class="text-8xl md:text-9xl animate-spin-slow select-none">
+                        🌎
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="historia" class="py-24 bg-slate-900/50 border-y border-slate-800/80">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <h2 class="text-3xl md:text-4xl font-black text-white flex items-center justify-center gap-3">
+                <span>📖</span> História
+            </h2>
+            
+            <p class="text-slate-300 text-lg leading-relaxed">
+                Quatro jovens de diferentes países acabam se encontrando durante uma grande aventura. Cada um possui uma personalidade, uma cultura e habilidades totalmente diferentes.
+            </p>
+            <p class="text-slate-300 text-lg leading-relaxed">
+                No começo, eles tentam resolver os problemas sozinhos e acabam percebendo que nem sempre é possível. Para continuar avançando, eles precisam aprender a trabalhar juntos.
+            </p>
+
+            <div class="p-8 rounded-2xl bg-gradient-to-r from-teal-500/10 via-indigo-500/10 to-purple-500/10 border border-slate-800 text-center space-y-3">
+                <h3 class="text-xl font-bold text-teal-300 flex items-center justify-center gap-2">
+                    <span>🌍</span> A mensagem do jogo
+                </h3>
+                <p class="text-lg text-slate-200 font-medium italic">
+                    "Ninguém precisa ser igual para caminhar na mesma direção."
+                </p>
+                <p class="text-sm text-slate-400">
+                    A união entre pessoas diferentes pode ajudar todos a superar desafios imensos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="personagens" class="py-24 max-w-6xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-black text-white mb-4 flex items-center justify-center gap-3">
+                <span>👥</span> Personagens
+            </h2>
+            <p class="text-slate-400 text-lg">Cada personagem vem de um país diferente e possui características próprias.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                <div>
+                    <div class="relative aspect-square w-full mb-5 rounded-xl overflow-hidden bg-slate-950 border border-slate-800 group-hover:border-teal-500/30 transition-colors">
+                        <img src="img/luna.jpg" alt="Luna" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x400/0f172a/38bdf8?text=Luna+🇧🇷';">
+                        <span class="absolute top-3 right-3 text-2xl bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-lg border border-slate-700/60 shadow-lg">🇧🇷</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white">Luna</h3>
+                    <h4 class="text-teal-400 font-semibold text-sm mb-3">Brasil</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                        Energética, impulsiva e corajosa. Gosta de agir rapidamente e não desiste fácil diante dos desafios.
+                    </p>
+                </div>
+                <div class="text-xs text-slate-200 bg-slate-950 p-3 rounded-xl border border-slate-800 font-medium">
+                    💪 <b>Habilidade:</b> Força e resistência.
+                </div>
+            </div>
+
+            <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                <div>
+                    <div class="relative aspect-square w-full mb-5 rounded-xl overflow-hidden bg-slate-950 border border-slate-800 group-hover:border-indigo-500/30 transition-colors">
+                        <img src="img/kenji.jpg" alt="Kenji" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x400/0f172a/818cf8?text=Kenji+🇯🇵';">
+                        <span class="absolute top-3 right-3 text-2xl bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-lg border border-slate-700/60 shadow-lg">🇯🇵</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white">Kenji</h3>
+                    <h4 class="text-indigo-400 font-semibold text-sm mb-3">Japão</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                        Calmo, observador e cuidadoso. Sempre pensa detalhadamente antes de tomar decisões importantes.
+                    </p>
+                </div>
+                <div class="text-xs text-slate-200 bg-slate-950 p-3 rounded-xl border border-slate-800 font-medium">
+                    🎯 <b>Habilidade:</b> Precisão e agilidade.
+                </div>
+            </div>
+
+            <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                <div>
+                    <div class="relative aspect-square w-full mb-5 rounded-xl overflow-hidden bg-slate-950 border border-slate-800 group-hover:border-purple-500/30 transition-colors">
+                        <img src="img/emille.jpg" alt="Émille" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x400/0f172a/c084fc?text=Émille+🇫🇷';">
+                        <span class="absolute top-3 right-3 text-2xl bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-lg border border-slate-700/60 shadow-lg">🇫🇷</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white">Émille</h3>
+                    <h4 class="text-purple-400 font-semibold text-sm mb-3">França</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                        Criativo, divertido e cheio de ideias. Costuma encontrar soluções originais para resolver enigmas.
+                    </p>
+                </div>
+                <div class="text-xs text-slate-200 bg-slate-950 p-3 rounded-xl border border-slate-800 font-medium">
+                    🧩 <b>Habilidade:</b> Criatividade e enigmas.
+                </div>
+            </div>
+
+            <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                <div>
+                    <div class="relative aspect-square w-full mb-5 rounded-xl overflow-hidden bg-slate-950 border border-slate-800 group-hover:border-amber-500/30 transition-colors">
+                        <img src="img/zuri.jpg" alt="Zuri" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x400/0f172a/fbbf24?text=Zuri+🇿🇦';">
+                        <span class="absolute top-3 right-3 text-2xl bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-lg border border-slate-700/60 shadow-lg">🇿🇦</span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-white">Zuri</h3>
+                    <h4 class="text-amber-400 font-semibold text-sm mb-3">África do Sul</h4>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                        Determinada, responsável e protetora. Está sempre pensando na segurança e bem-estar do grupo.
+                    </p>
+                </div>
+                <div class="text-xs text-slate-200 bg-slate-950 p-3 rounded-xl border border-slate-800 font-medium">
+                    🛡️ <b>Habilidade:</b> Proteção e estratégia.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jogar" class="py-24 bg-slate-900/40 border-t border-slate-800/80">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-white mb-3 flex items-center justify-center gap-3">
+                    <span>🎮</span> Como Jogar
+                </h2>
+                <p class="text-slate-400 text-lg">World United é um jogo de plataforma inspirado em clássicos do gênero.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+                    <h3 class="text-xl font-bold text-teal-400 mb-3 flex items-center gap-2">
+                        <span>🎯</span> Objetivo
+                    </h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Avançar pelos cenários, superar obstáculos e aprender a trabalhar em equipe para progredir.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+                    <h3 class="text-xl font-bold text-indigo-400 mb-3 flex items-center gap-2">
+                        <span>⌨️</span> Controles
+                    </h3>
+                    <ul class="text-slate-300 text-sm space-y-2">
+                        <li class="flex items-center gap-2"><span class="bg-slate-800 px-2 py-0.5 rounded text-xs text-slate-200 font-mono">← →</span> Para andar</li>
+                        <li class="flex items-center gap-2"><span class="bg-slate-800 px-2 py-0.5 rounded text-xs text-slate-200 font-mono">↑</span> Para pular</li>
+                        <li class="flex items-center gap-2"><span class="bg-slate-800 px-2 py-0.5 rounded text-xs text-slate-200 font-mono">Espaço</span> Utilizar habilidades</li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-400 mb-3 flex items-center gap-2">
+                            <span>💡</span> Dica
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Cada personagem possui uma habilidade diferente. Use as diferenças entre eles para avançar.
+                        </p>
+                    </div>
+                    <button onclick="mostrarDica()" class="w-full bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 border border-amber-500/30 text-sm font-semibold py-2.5 rounded-xl transition-colors">
+                        Ver uma dica
+                    </button>
+                </div>
+            </div>
+
+            <div id="mensagemDica" class="hidden p-5 rounded-xl bg-teal-950/60 border border-teal-800/80 text-teal-200 text-sm text-center font-medium max-w-xl mx-auto shadow-lg"></div>
+        </div>
+    </section>
+
+    <section id="manual" class="py-24 max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-black text-white mb-3 flex items-center justify-center gap-3">
+                <span>📘</span> Manual
+            </h2>
+            <p class="text-slate-400">Guia básico para a sua jornada no World United.</p>
+        </div>
+
+        <div class="space-y-6">
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                <h3 class="text-lg font-bold text-teal-400 mb-2">Como jogar?</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Escolha um personagem e explore os cenários. Pule obstáculos, encontre caminhos e use as habilidades dos personagens.
+                </p>
+            </div>
+
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                <h3 class="text-lg font-bold text-indigo-400 mb-2">Trabalhe em equipe!</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Alguns desafios serão mais fáceis quando os personagens ajudarem uns aos outros.
+                </p>
+            </div>
+
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl">
+                <h3 class="text-lg font-bold text-purple-400 mb-2">Objetivo final</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    Chegar ao final da aventura mostrando que diferentes pessoas podem trabalhar juntas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="baixar" class="py-24 bg-slate-900/50 border-y border-slate-800/80">
+        <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
+            <h2 class="text-3xl md:text-4xl font-black text-white flex items-center justify-center gap-3">
+                <span>🕹️</span> Jogue World United
+            </h2>
+            <p class="text-slate-300 text-lg">
+                O jogo ainda está em desenvolvimento.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <button onclick="jogar()" class="bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-teal-400 hover:to-indigo-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-teal-500/20 transition-all hover:scale-105 active:scale-95 flex items-center gap-2">
+                    <span>▶</span> Jogar online
+                </button>
+                <button onclick="baixar()" class="bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold px-8 py-4 rounded-xl border border-slate-800 transition-all hover:scale-105 active:scale-95 flex items-center gap-2">
+                    <span>⬇️</span> Download
+                </button>
+            </div>
+
+            <p id="statusJogo" class="text-sm font-semibold text-teal-400 h-6 pt-2">
+                Versão do jogo: em desenvolvimento
+            </p>
+        </div>
+    </section>
+
+    <section id="equipe" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-black text-white mb-3 flex items-center justify-center gap-3">
+                <span>👩‍💻</span> Nossa Equipe
+            </h2>
+            <p class="text-slate-400">Estudantes responsáveis pela criação do projeto World United.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl text-center flex flex-col items-center justify-center space-y-4 hover:border-slate-700 transition-colors">
+                <div class="w-16 h-16 rounded-full bg-teal-500/20 text-teal-300 font-bold text-xl flex items-center justify-center">
+                    LP
+                </div>
+                <h3 class="text-xl font-bold text-white">Lucas Pires</h3>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl text-center flex flex-col items-center justify-center space-y-4 hover:border-slate-700 transition-colors">
+                <div class="w-16 h-16 rounded-full bg-indigo-500/20 text-indigo-300 font-bold text-xl flex items-center justify-center">
+                    LS
+                </div>
+                <h3 class="text-xl font-bold text-white">Laura Santana</h3>
+            </div>
+
+            <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl text-center flex flex-col items-center justify-center space-y-4 hover:border-slate-700 transition-colors">
+                <div class="w-16 h-16 rounded-full bg-purple-500/20 text-purple-300 font-bold text-xl flex items-center justify-center">
+                    KL
+                </div>
+                <h3 class="text-xl font-bold text-white">Karen Lemes</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800/80 text-center space-y-2 text-slate-500 text-sm">
+        <p class="font-bold text-slate-400">🌎 World United</p>
+        <p>Juntos somos melhores.</p>
+        <p class="text-xs text-slate-600">Projeto escolar • 2026</p>
+    </footer>
+
+    <script>
+        const dicasLista = [
+            "Para vencer trechos de saltos duplos, prefira utilizar a Luna!",
+            "O Kenji possui maior velocidade para desviar de perigos rápidos.",
+            "Quando encontrar um enigma complicado no caminho, utilize a criatividade do Émille.",
+            "A Zuri é excelente para momentos em que o grupo precisa de proteção estratégica."
+        ];
+
+        function mostrarDica() {
+            const campo = document.getElementById('mensagemDica');
+            const dicaSorteada = dicasLista[Math.floor(Math.random() * dicasLista.length)];
+            campo.innerText = "💡 Dica: " + dicaSorteada;
+            campo.classList.remove('hidden');
+        }
+
+        function jogar() {
+            const status = document.getElementById('statusJogo');
+            status.innerText = "🚀 A versão de testes online será liberada em breve para a apresentação escolar!";
+        }
+
+        function baixar() {
+            const status = document.getElementById('statusJogo');
+            status.innerText = "📦 O instalador do jogo estará disponível para download no dia da feira de projetos.";
+        }
+    </script>
+</body>
+</html>
